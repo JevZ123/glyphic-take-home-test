@@ -7,7 +7,7 @@ from interfaces import Message, Question
 API_ERROR_RESPONSE = "No response"
 TRANSCRIPT_PROMPT = """
 I want you to answer questions based on a call transcript that I will provide.
-The call transcript has each participant's (a.k.a. party's) utterances labelled in the form of '<time of utteranc relative to call starte> participant role (participant name): utterance'.
+The call transcript has each participant's (a.k.a. party's) utterances labelled in the form of '<time of utterance relative to call start> participant role (participant name): utterance'.
 
 When answering the questions do not include the < or > symbol around the time indicator.
 
