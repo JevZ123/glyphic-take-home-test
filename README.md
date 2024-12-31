@@ -130,8 +130,8 @@ cd frontend && yarn lint --fix
 
 Backend:
 
-```
-cd backends/src && python3 -m black .
+```bash
+cd backend/src && python3 -m black .
 ```
 
 Terraform

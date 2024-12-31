@@ -1,1 +1,3 @@
-pushd frontend > /dev/null && yarn build && popd > /dev/null
+pushd ./frontend
+yarn build
+popd
