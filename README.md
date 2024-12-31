@@ -33,7 +33,7 @@ There are several important notes that apply to the whole README/repo:
    - [Infrastructure](#infrastructure)
 8. [CI](#ci)
 9. [Extra functionality](#extra-functionality)
-10. [Improvements currently out of scope](#improvement-currently-out-of-scope)
+10. [Improvements currently out of scope](#improvements-currently-out-of-scope)
 
 ## Prerequisites
 
