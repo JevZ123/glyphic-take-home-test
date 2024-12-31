@@ -37,15 +37,13 @@ There are several important notes that apply to the whole README/repo:
 
 ## Prerequisites
 
-Not exclusive to these versions of the software, should work with newer ones where available (not tested):
-
 * Node version: `23.5`
 * Python3 version: `3.11`
 * Terraform version: `1.5.7`
 * AWS CLI v2: `2.221`
 * Docker: `27.3.1`
 
-`Note`:Terraform and Docker are required for [deployment](#deployment) and infrastructure provisioning. Ensure the specified versions or later are installed
+`Note`:Terraform and Docker are required for [deployment](#deployment) and infrastructure provisioning. Ensure the specified versions or later (not tested) are installed
 
 ## Setup
 
