@@ -2,7 +2,7 @@
 
 This repository contains the implementation of a web app by Jevgenij Zubovskij for the Glyphic AI take-home test. The app allows users to ask questions about selected sales calls
 
-The website is deployed in AWS and can be reached via (this link)[http://jz-glyphic-take-home-test-frontend.s3-website.eu-north-1.amazonaws.com/]
+The website is deployed in AWS and can be reached via [this link](http://jz-glyphic-take-home-test-frontend.s3-website.eu-north-1.amazonaws.com/)
 
 ## Key notes
 
