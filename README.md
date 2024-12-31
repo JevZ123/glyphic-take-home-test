@@ -71,7 +71,7 @@ Without closing the terminal tab, the server is now running on port 8000 of the 
 
 ### Frontend
 
-To run the frontend with the same reload on source code change. Note the `REACT_APP_API_URL` is being set here to the backend server URL
+To run the frontend with the same reload on source code change. Note that `REACT_APP_API_URL` is being set here to the backend server URL
 
 ```bash
 cd frontend && REACT_APP_API_URL=localhost:8000 yarn start
@@ -164,7 +164,7 @@ Terraform gets its credentials from the environment variable, ensure       `AWS_
 
 Deployment is essentially done in 3 stages:
 
-* Deploy the infrastructure (can be omitted if not changes after first application)
+* Deploy the infrastructure (can be omitted if no changes after first application)
 * Deploy the built backend to the created EKS cluster
 * Deploy the built frontend to the created S3 bucket configured to serve a static website
 
@@ -206,7 +206,7 @@ The current CI is based in GitHub and essentially does all the above:
 
 The frontend includes a toggle that determines whether to use conversation history—either propagating the message history or sending only the initial prompt. While the application propagates the correct message sequence, the Anthropic API does not process it correctly and cannot answer follow-up questions about the transcript. This behavior is likely due to model limitations or token size constraints. For now, the toggle can be ignored, as it is intended for future extension
 
-## Improvement currently out of scope
+## Improvements currently out of scope
 
 * Given the small number of documents, they are currently embedded directly into the backend Docker image. In a more extensive scenario, this approach would be replaced with a dedicated document database, such as MongoDB, to ensure scalability and efficient data management
 * A distributed cache would replace the current local one, which is only a stub and disappears if the container crashes. This is acceptable for the current application, as it is scaled to a single replica (configurable in Terraform). However, for larger-scale deployments, a managed distributed cache like Redis would be a more appropriate solution, providing persistence and reliability
