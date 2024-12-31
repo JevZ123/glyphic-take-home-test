@@ -100,7 +100,7 @@ jobs:
         working-directory: infrastructure/backend
         run: |
           terraform init
-          terraform apply --auto-approve -var "image_selection=:latest" -var "anthropic_api_key=${{ secrets.ANTHROPIC_API_KEY }}"
+          terraform apply --auto-approve -var "image_selection=:$(git rev-parse --short HEAD)" -var "anthropic_api_key=${{ secrets.ANTHROPIC_API_KEY }}"
 
   deploy-frontend:
     name: Build and deploy frontend
