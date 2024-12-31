@@ -1,0 +1,35 @@
+name: E2E test workflow
+
+on:
+  workflow_dispatch:
+  workflow_call:
+    secrets:
+      FRONTEND_URL: 
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+
+  test:
+    name: E2E test on current deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 23.5
+
+      - name: Install Playwright dependencies
+        working-directory: frontend
+        run: |
+          yarn install
+          npx playwright install  
+
+      - name: Run E2E tests
+        working-directory: frontend
+        run: BASE_URL="${{ secrets.FRONTEND_URL }}" npx playwright test
+
+

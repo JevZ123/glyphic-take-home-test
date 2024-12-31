@@ -1,0 +1,1 @@
+aws s3 cp frontend/build s3://jz-glyphic-take-home-test-frontend/ --recursive

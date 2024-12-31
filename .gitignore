@@ -1,0 +1,9 @@
+**__pycache__
+**/node_modules
+**/build
+**.DS_Store
+**.out
+**.log
+**.terraform**
+**test-results**
+
