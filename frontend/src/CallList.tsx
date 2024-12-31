@@ -56,7 +56,7 @@ const CallsList: React.FC = () => {
   return (
     <Box p={4}>
       <Typography variant="h4" component="h1" textAlign="center" gutterBottom>
-        Pick a Call
+        Pick a call
       </Typography>
 
       <Divider sx={{ mb: 4 }} />
