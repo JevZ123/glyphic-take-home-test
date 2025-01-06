@@ -11,7 +11,7 @@ variable "account_id" {
 variable "image_selection" {
   description = "SHA or :tag"
   type        = string
-  default     = "latest"
+  default     = ":latest"
 }
 
 variable "anthropic_api_key" {
