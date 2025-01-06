@@ -33,6 +33,7 @@ async def send_to_anthropic(
     # NOTE: same use as for the sync API, but different client class
     # https://github.com/anthropics/anthropic-sdk-python?tab=readme-ov-file#async-usage
 
+    print(f"sending messages:\n{conversation_history}")
     try:
         # use minimum amount of tokens possible
         tokens = min(
